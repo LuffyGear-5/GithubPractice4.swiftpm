@@ -9,4 +9,5 @@ import SwiftUI
 struct Task: Hashable {
     var id: UUID = UUID()
     var nameOfTask: String
+    var completed: Bool
 }
