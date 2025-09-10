@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var tasks : [String] = ["Go to Ap Comp Sci P", "Learn SwiftUI", "Build an app"]
+    @State var tasks : [Task] = []
     var body: some View {
-        
+        HeaderView(tasks: tasks)
         List(tasks,id: \.self){ tasks in
             Text(tasks)
         }
