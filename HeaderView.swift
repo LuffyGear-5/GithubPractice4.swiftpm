@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HeaderView: View {
     
-    @Binding var tasks: [Task]?
+    @Binding var tasks : [Task]
     @State var newTask: String = ""
     var body: some View {
         HStack{
