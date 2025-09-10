@@ -5,7 +5,8 @@ struct ContentView: View {
     var body: some View {
         HeaderView(tasks: tasks)
         List(tasks,id: \.self){ tasks in
-            Text(tasks)
+            Text(tasks.nameOfTask)
         }
+        
     }
 }
