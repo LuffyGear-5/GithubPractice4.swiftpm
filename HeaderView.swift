@@ -15,7 +15,7 @@ struct HeaderView: View {
         HStack{
             TextField("Enter a Task", text: $newTask)
             Button("New Task") {
-                tasks.append(Task(nameOfTask: newTask, completed: false))
+                tasks!.append(Task(nameOfTask: newTask, completed: false))
                 
             }
         }
